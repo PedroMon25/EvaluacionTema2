@@ -1,4 +1,3 @@
-import tkinter as tk
 from tkinter import messagebox
 import requests
 from control_frame import ControlFrame
@@ -54,9 +53,3 @@ class EvaluacionTema2:
             self.table_frame.actualizar_tabla([registro])
         else:
             messagebox.showinfo("Información", "No se encontró un registro con ese número.")
-
-
-if __name__ == "__main__":
-    root = tk.Tk()
-    app = EvaluacionTema2(root)
-    root.mainloop()

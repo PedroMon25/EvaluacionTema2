@@ -2,10 +2,10 @@ import tkinter as tk
 from tkinter import messagebox
 import requests
 from control_frame import ControlFrame
-from registro_table import RegistroTable
+from RegistroTabla import RegistroTabla
 
 
-class App:
+class EvaluacionTema2:
     def __init__(self, root):
         self.root = root
         self.root.title("Registro de Huéspedes")
@@ -17,7 +17,7 @@ class App:
         self.control_frame.pack(pady=10)
 
         # Redimensionar automaticamente la tabla
-        self.table_frame = RegistroTable(self.root)
+        self.table_frame = RegistroTabla(self.root)
         self.table_frame.pack(expand=True, fill='both')
 
         # Mostrar todos los registros al inicio
@@ -58,5 +58,5 @@ class App:
 
 if __name__ == "__main__":
     root = tk.Tk()
-    app = App(root)
+    app = EvaluacionTema2(root)
     root.mainloop()

@@ -1,9 +1,7 @@
-# registro_table.py
-
 import tkinter as tk
 from tkinter import ttk
 
-class RegistroTable(tk.Frame):
+class RegistroTabla(tk.Frame):
     def __init__(self, parent):
         super().__init__(parent)
 
@@ -24,7 +22,7 @@ class RegistroTable(tk.Frame):
 
         self.tree.column("Id", width=50)
         self.tree.column("Habitacion", width=80)
-        self.tree.column("CuentaDePago", width=80)
+        self.tree.column("CuentaDePago", width=100)
 
     def actualizar_tabla(self, registros):
         """Actualiza la tabla con los registros dados"""
